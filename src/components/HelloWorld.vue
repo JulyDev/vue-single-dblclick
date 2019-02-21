@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <div class="msg" v-html="msg"></div>
+    <!-- Chrome浏览器下，单击，双击都有效-->
     <div class="click" @click="doClick($event)">单击/双击我</div>
+    <a href="https://blog.csdn.net/weixin_41559723/article/details/78933543">兼容性问题可参考这篇文章</a>
   </div>
 </template>
 
@@ -58,6 +60,7 @@ export default {
   font-size: 14px;
   padding-top: 4px;
   padding-bottom: 4px;
+  margin-bottom: 20px;
 }
 .msg {
   text-align: left;
